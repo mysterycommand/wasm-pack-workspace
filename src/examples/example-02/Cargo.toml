@@ -1,6 +1,9 @@
 [package]
 name = "example-02"
 version = "0.1.0"
+description = "a minimal repro of `wasm-pack build` not working on a workspace"
+repository = "git@github.com:mysterycommand/wasm-pack-workspace.git"
+license = "(MIT OR Apache-2.0)"
 authors = ["Matt Hayes <matt@mysterycommand.com>"]
 edition = "2018"
 
