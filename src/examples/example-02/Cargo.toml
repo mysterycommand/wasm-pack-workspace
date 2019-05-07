@@ -1,0 +1,16 @@
+[package]
+name = "example-02"
+version = "0.1.0"
+description = "a minimal repro of `wasm-pack build` not working on a workspace"
+repository = "git@github.com:mysterycommand/wasm-pack-workspace.git"
+license = "(MIT OR Apache-2.0)"
+authors = ["Matt Hayes <matt@mysterycommand.com>"]
+edition = "2018"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+cfg-if = "0.1.7"
+wasm-bindgen = "0.2.43"
+web-sys = { version = "0.3.20", features = [ "console" ] }
