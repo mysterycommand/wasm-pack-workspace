@@ -6,7 +6,7 @@ mod utils;
 
 use cfg_if::cfg_if;
 use wasm_bindgen::prelude::*;
-use web_sys::console;
+use web_sys::{console, CanvasRenderingContext2d};
 
 cfg_if! {
     // When the `wee_alloc` feature is enabled, use `wee_alloc` as the global
@@ -19,9 +19,10 @@ cfg_if! {
 }
 
 #[wasm_bindgen]
-pub fn run() {
+pub fn run(ctx: &CanvasRenderingContext2d) {
     // If the `console_error_panic_hook` feature is enabled this will set a
     // panic hook, otherwise it will do nothing.
     utils::set_panic_hook();
     console::log_1(&JsValue::from_str("run from example-01"));
+    console::log_1(ctx);
 }
