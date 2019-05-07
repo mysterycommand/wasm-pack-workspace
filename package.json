@@ -1,0 +1,9 @@
+{
+  "name": "wasm-pack-workspace",
+  "version": "1.0.0",
+  "description": "a minimal repro of @fartts/fartts#478",
+  "repository": "git@github.com:mysterycommand/wasm-pack-workspace.git",
+  "author": "Matt Hayes <matt@mysterycommand.com>",
+  "license": "(MIT OR Apache-2.0)",
+  "private": true
+}
